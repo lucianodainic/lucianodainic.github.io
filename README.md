@@ -1,2 +1,0 @@
-# lucianodainic.github.io
-blog
