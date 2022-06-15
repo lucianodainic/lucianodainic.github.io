@@ -1,0 +1,17 @@
+# Site settings
+
+title: Lucian Odainic BLOG
+email:
+description:
+baseurl: ""
+url: ""
+twitter_username:
+github_username: lucianodainic
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+syntax_highlighter: rouge 
