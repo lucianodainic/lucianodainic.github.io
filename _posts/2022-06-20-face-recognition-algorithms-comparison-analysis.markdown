@@ -102,3 +102,5 @@ After preprocessing is done we can try some testing. The test image is required 
         test_img = test_img.T
         return nn.run_alg(projections.T,norm,test_img)
 ~~~
+
+*eigenfaces fundamentals at this [link](https://www.cin.ufpe.br/~rps/Artigos/Face%20Recognition%20Using%20Eigenfaces.pdf).
