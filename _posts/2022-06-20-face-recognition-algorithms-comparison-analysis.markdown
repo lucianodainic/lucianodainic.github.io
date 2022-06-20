@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Pattern Recognition on ORL database. Algorithms implementation and analysis."
+title: "Face Recognition on ORL database. Algorithms implementation and analysis."
 excerpt: "ORL is a simple database of human faces. It is a great collection of data to test some recognition algorithms on and analyse their performance."
 ---
 
-The [ORL pattern-recognition](https://github.com/lucianodainic/pattern-recognition) project comprises several machine learning algorithms on different levels of complexity. In order to keep up with their following description we need some notations and prior explanation:
+The [ORL face-recognition](https://github.com/lucianodainic/face-recognition) project comprises several machine learning algorithms on different levels of complexity. In order to keep up with their following description we need some notations and prior explanation:
 
 - ORL database contains 10 photos of 40 distinct persons.
 - The size of each image is 92x112 pixels, with 256 grey levels per pixel.
