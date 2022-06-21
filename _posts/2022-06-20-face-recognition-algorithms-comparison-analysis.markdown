@@ -62,8 +62,8 @@ For proper _k-NN_ we need to select _k_ neighbors (usually 3,5,7,..). So, the fo
 ## Eigenfaces
 
 This algorithm is a bit more complex, but in the end it uses nearest neighbour concept as well.  
-Eigenfaces needs a step of preprocessing prior to its actual execution, in order to prepare the "face space" comprising
-the most relevant and descriptive _k_ eigenvectors (here 20, 40, 60, 80, 100), a concept known as PCA (principal components analysis).
+Eigenfaces needs a step of preprocessing prior to its actual execution, in order to prepare the "face space" (1) comprising the most relevant and descriptive _k_ eigenvectors (here 20, 40, 60, 80, 100), a concept known as PCA
+(principal components analysis).
 
 The proper eigenvectors are computed for the covariance matrix of the _A_ matrix. As covariance matrix is a square, symmetric matrix it will result with size _m x m_. The step of computing the eigenvectors will take a huge amount of time. Thus, we reduce their dimension to _n x n_. After that we project the _A_ matrix onto _L_ space and get the much desired eigenfaces, called so because eigenvectors, if plotted, look like phantoms faces. Once we got them, next step and final one will be creating the "face space" by extracting the first _k_ eigenvectors with greatest eigenvalues and projecting the _A_ matrix only on those.
 
@@ -103,4 +103,10 @@ After preprocessing is done we can try some testing. The test image is required 
         return nn.run_alg(projections.T,norm,test_img)
 ~~~
 
-*eigenfaces fundamentals at this [link](https://www.cin.ufpe.br/~rps/Artigos/Face%20Recognition%20Using%20Eigenfaces.pdf).
+## Lanczos
+
+Lanczos is the third and last used algorithm. It represents an iterative way of finding those "best" _k_ eigenvectors. The preprocessing step has the projection of _A_ on the "face space" as output and proper execution and testing uses nearest neighbour as well. The code function can be found at _scripts/lanczos.py_.
+
+___References___
+
+[(1)](https://www.cin.ufpe.br/~rps/Artigos/Face%20Recognition%20Using%20Eigenfaces.pdf) Turk, Matthew A., and Alex P. Pentland. "Face recognition using eigenfaces." Proceedings. 1991 IEEE computer society conference on computer vision and pattern recognition. IEEE Computer Society, 1991.
