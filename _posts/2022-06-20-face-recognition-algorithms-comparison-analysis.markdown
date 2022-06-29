@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Face Recognition on ORL database. Algorithms implementation and analysis."
-excerpt: "ORL is a simple database of human faces. It is a great collection of data to test some recognition algorithms on and analyse their performance."
+excerpt: "ORL is a simple database of human faces. It is a great collection of data to test some recognition algorithms on and analyze their performance."
 ---
 
 The [ORL face-recognition](https://github.com/lucianodainic/face-recognition) project comprises several machine learning algorithms on different levels of complexity. In order to keep up with their following description we need some notations and prior explanation:
