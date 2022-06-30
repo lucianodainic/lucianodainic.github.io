@@ -9,7 +9,7 @@ excerpt: "Discussing and comparing AI search algorithms. Implementations and exe
 - __States__: configurations of tiles.
 - __Initial State__: any state.
 - __Actions__: moving the blank tile _left_, _right_, _up_, _down_.
-- __Transition model__: moving a blank tile means to switch places with the tile situated in the direction of switching.
+- __Transition model__: switch places between blank tile and the tile situated in the direction of switching.
 - __Action cost__: an action equals 1.
 
 ## Uninformed Search algorithms
