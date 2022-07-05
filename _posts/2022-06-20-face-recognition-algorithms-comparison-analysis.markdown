@@ -107,6 +107,8 @@ After preprocessing is done we can try some testing. The test image is required 
 
 Lanczos is the third and last used algorithm. It represents an iterative way of finding those "best" _k_ eigenvectors. The preprocessing step has the projection of _A_ on the "face space" as output and proper execution and testing uses nearest neighbour as well. The code function can be found at _scripts/lanczos.py_.
 
+&nbsp;
+
 ___References___
 
 [[1]](https://www.cin.ufpe.br/~rps/Artigos/Face%20Recognition%20Using%20Eigenfaces.pdf) Turk, Matthew A., and Alex P. Pentland. "Face recognition using eigenfaces." Proceedings. 1991 IEEE computer society conference on computer vision and pattern recognition. IEEE Computer Society, 1991.
