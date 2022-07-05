@@ -67,9 +67,7 @@ Hill climbing finds the local maximum, ascending from the current state to the n
 #### 2.1.2 Simulated annealing
 
 SA is similar to hill climbing except it jumps to the next neighbor randomly and allows some descending, in this way, aiming for a global maximum. The algorithm accepts the new state if it is better than the previous state (a value computed by
-
 $ \Delta E = cost(current \_state) - cost(next \_state) $
-
 ), and when it is not, it attaches a probability number less than 1. Annealing analogy is about using a temperature _T_ variable that decreases over time and iterations and influences the probability value:
 
 $ e ^ {\Delta E/T} $ .
